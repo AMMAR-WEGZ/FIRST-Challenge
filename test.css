@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+ 
+    background-color: hsl(233, 47%, 7%);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.content{
+    background-color: hsl(244, 37%, 16%);
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:  600px 600px;
+    gap: 20px;
+    place-items: center;
+    /* grid-template-rows: auto; */
+    color: white;
+}
+@media (max-width: 375px){
+   
+   .main{
+    display: flex;
+    margin-top: 90px;   
+}
+   
+    .content{
+        /* margin-top: 60px;
+        padding-top: 20px; */
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.text{
+    /* padding: 50px; */
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.text h1{
+    text-align: left;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.text h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+.text p{
+    text-align: left;
+    font-size: 28px;
+    line-height: 1.8;
+    color: hsl(240, 2%, 79%);
+    margin-bottom: 30px;
+}
+
+.icon{
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    text-align: left;
+}
+.icon p{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-right: 10px;
+    color: hsl(240, 2%, 79%);}
+@media (max-width: 375px){
+    .text{
+        ddisplay: flex;
+        flex-direction: column;
+    }
+    .text h1{
+        font-size: 2rem;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    .text p{
+        text-align: center;
+        font-size: 18px;
+    }
+    .icon{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .icon p{
+        padding-left: 12px;
+    }
+    
+}
+
+.wrapper {
+   height: 544px;
+    width: 650px;
+  position: relative;
+  left: 53px;  
+  /* bottom: -9px; */
+    background-color: hsl(277, 64%, 61%); /* لون التلوين */
+}
+
+.wrapper img {
+  
+  width: 650px;
+  height: 544px;
+  mix-blend-mode: multiply; /* يمزج اللون مع الصورة */
+}
+
+
+@media (max-width:375px) {
+
+    .wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 0;
+        top:0;
+    }
+    .wrapper img {
+        position: relative;
+        bottom: -5px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
